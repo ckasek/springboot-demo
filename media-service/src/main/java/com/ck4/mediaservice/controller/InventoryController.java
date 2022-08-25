@@ -1,7 +1,7 @@
 package com.ck4.mediaservice.controller;
 
 import com.ck4.mediaservice.entities.Inventory;
-import com.ck4.mediaservice.model.AddInventoryBody;
+import com.ck4.mediaservice.controller.model.AddInventoryBody;
 import com.ck4.mediaservice.service.InventoryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

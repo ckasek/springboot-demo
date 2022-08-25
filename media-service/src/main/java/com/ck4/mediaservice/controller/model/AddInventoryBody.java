@@ -1,4 +1,4 @@
-package com.ck4.mediaservice.model;
+package com.ck4.mediaservice.controller.model;
 
 import lombok.Getter;
 import lombok.Setter;

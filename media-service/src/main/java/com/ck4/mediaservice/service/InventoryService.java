@@ -8,6 +8,8 @@ import com.ck4.mediaservice.utils.ObjectUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class InventoryService {
 
@@ -36,5 +38,9 @@ public class InventoryService {
             inventory.setMedia(media);
             inventoryRepository.save(inventory);
         }
+    }
+
+    public List<Inventory> findByMediaId(Long mediaId) {
+        return inventoryRepository.findAllByMediaId(mediaId);
     }
 }
