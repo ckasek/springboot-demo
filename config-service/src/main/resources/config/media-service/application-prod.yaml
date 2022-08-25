@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/mediadb-prod
+    username: spring-prod
+    password: vhs_legacy!
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: false
+    console.settings.trace: false
+    console.settings.web-allow-others: false
+server:
+  error:
+    include-message: always

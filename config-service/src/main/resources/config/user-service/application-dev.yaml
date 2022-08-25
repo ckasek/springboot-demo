@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/userdb-dev
+    username: spring-dev
+    password: user54321
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: true
+    console.settings.trace: false
+    console.settings.web-allow-others: false
+server:
+  error:
+    include-message: always

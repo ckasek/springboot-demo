@@ -1,0 +1,19 @@
+server:
+  error:
+    include-message: always
+  port: 8088
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations:
+            - classpath:/config # Config files for all microservices
+            - classpath:/config/{application} # Config files for specific applications
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh, bus-refresh, beans, env"
